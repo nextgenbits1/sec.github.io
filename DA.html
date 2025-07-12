@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Digital Appliances (DA)</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    header {
+      background-color: transparent;
+      color: #222;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    header span {
+      text-decoration: underline;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      margin-top: 100px;
+    }
+
+    .box {
+      width: 220px;
+      height: 180px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 600;
+      color: #333;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+
+    .box:hover {
+      transform: scale(1.03);
+    }
+
+    .box i {
+      font-size: 32px;
+      margin-bottom: 12px;
+      color: #444;
+    }
+
+    .sales-talk { background-color: #e8f0fe; }
+    .benchmarking { background-color: #e0f7fa; }
+    .one-pager { background-color: #fce4ec; }
+    .top-reasons { background-color: #e8f5e9; }
+    .product-info { background-color: #fff3e0; }
+
+    .box-link {
+      text-decoration: none;
+    }
+
+    .home-button {
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+    }
+
+    .home-button button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #e0e0e0;
+      color: #333;
+      cursor: pointer;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      transition: background-color 0.3s;
+    }
+
+    .home-button button:hover {
+      background-color: #d5d5d5;
+    }
+  </style>
+</head>
+<body>
+
+  <header><span>Digital Appliances (DA)</span></header>
+
+  <div class="container">
+    <a class="box-link" href="https://drive.google.com/drive/folders/1ftALVIVRgkcXO4blf4I-N5nOsyX7i4uq?usp=drive_link" target="_blank">
+      <div class="box sales-talk">
+        <i class="fas fa-comments"></i>
+        Sales Talk
+      </div>
+    </a>
+
+    <a class="box-link" href="https://drive.google.com/drive/folders/1gsSzL8NgdG3ZKFeV4pPpPCULPGMB6ZhH?usp=drive_link" target="_blank">
+      <div class="box benchmarking">
+        <i class="fas fa-chart-line"></i>
+        Competition Benchmarking
+      </div>
+    </a>
+
+    <a class="box-link" href="https://drive.google.com/drive/folders/1j9x1x3_RXH2mYzDPCmSdOWaCD7a1VqBf?usp=drive_link" target="_blank">
+      <div class="box one-pager">
+        <i class="fas fa-file-alt"></i>
+        DA One Pager
+      </div>
+    </a>
+
+    <a class="box-link" href="https://drive.google.com/drive/folders/1cJf3vLZH05-XRIjI4V5eiKK1D9PQo1aH?usp=drive_link" target="_blank">
+      <div class="box top-reasons">
+        <i class="fas fa-star"></i>
+        Top Reasons to Buy
+      </div>
+    </a>
+
+    <a class="box-link" href="https://drive.google.com/drive/folders/1YXkzlFuCc_CKUFjTGggD2jNbPItxzca5?usp=drive_link" target="_blank">
+      <div class="box product-info">
+        <i class="fas fa-box"></i>
+        Product Information
+      </div>
+    </a>
+  </div>
+
+  <div class="home-button">
+    <button onclick="location.href='file:///C:/Users/Alok/Desktop/Webpage/index.html'">
+      <i class="fas fa-home"></i> Home
+    </button>
+  </div>
+
+</body>
+</html>

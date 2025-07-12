@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samsung Product Categories</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f7;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      min-height: 100vh;
+      padding-bottom: 40px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      text-decoration: underline;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      gap: 40px;
+    }
+    .box {
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      width: 300px;
+      transition: transform 0.3s ease;
+    }
+    .box:hover {
+      transform: translateY(-5px);
+    }
+    .box-vd {
+      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+    }
+    .box-da {
+      background: linear-gradient(to bottom right, #fce4ec, #ffffff);
+    }
+    .box img {
+      width: 100px;
+      height: 100px;
+      filter: invert(15%) sepia(60%) saturate(300%) hue-rotate(180deg) brightness(95%) contrast(90%);
+    }
+    .label {
+      margin-top: 16px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #0077b6;
+    }
+  </style>
+</head>
+<body>
+  <h1>SEC Reference Desk</h1>
+  <div style="height: 5em;"></div>
+  <div class="container">
+    <a href="vd.html" style="text-decoration: none; color: inherit;">
+      <div class="box box-vd">
+        <img src="https://img.icons8.com/ios/500/tv.png" alt="TV Sketch">
+        <div class="label">Visual Display<br>(VD)</div>
+      </div>
+    </a>
+    <a href="file:///C:/Users/Alok/Desktop/Webpage/DA.html" style="text-decoration: none; color: inherit;">
+      <div class="box box-da">
+        <img src="https://img.icons8.com/ios/500/kitchen-room.png" alt="Digital Appliance Sketch">
+        <div class="label">Digital Appliances<br>(DA)</div>
+      </div>
+    </a>
+  </div>
+</body>
+</html>
