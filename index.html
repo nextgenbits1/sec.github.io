@@ -15,19 +15,17 @@
       min-height: 100vh;
       padding-bottom: 40px;
     }
+
     h1 {
       text-align: center;
       font-size: 32px;
       font-weight: bold;
       color: #2c3e50;
-      margin-bottom: 20px;
+      margin-bottom: 0;
       text-decoration: underline;
       font-family: Arial, sans-serif;
     }
-    .container {
-      display: flex;
-      gap: 40px;
-    }
+
     .box {
       border-radius: 16px;
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
@@ -36,31 +34,44 @@
       width: 300px;
       transition: transform 0.3s ease;
     }
-    .box:hover {
-      transform: translateY(-5px);
-    }
+
     .box-vd {
       background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+      margin-bottom: 80px;
     }
+
     .box-da {
       background: linear-gradient(to bottom right, #fce4ec, #ffffff);
     }
+
+    .box:hover {
+      transform: translateY(-5px);
+    }
+
     .box img {
       width: 100px;
       height: 100px;
       filter: invert(15%) sepia(60%) saturate(300%) hue-rotate(180deg) brightness(95%) contrast(90%);
     }
+
     .label {
       margin-top: 16px;
       font-size: 18px;
       font-weight: bold;
       color: #0077b6;
     }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   </style>
 </head>
 <body>
   <h1>SEC Reference Desk</h1>
-  <div style="height: 5em;"></div>
+  <div style="height: 80px;"></div> <!-- Added spacing between header and boxes -->
+
   <div class="container">
     <a href="VD.html" style="text-decoration: none; color: inherit;">
       <div class="box box-vd">
@@ -68,6 +79,7 @@
         <div class="label">Visual Display<br>(VD)</div>
       </div>
     </a>
+
     <a href="DA.html" style="text-decoration: none; color: inherit;">
       <div class="box box-da">
         <img src="https://img.icons8.com/ios/500/kitchen-room.png" alt="Digital Appliance Sketch">
